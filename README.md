@@ -50,7 +50,7 @@ python main.py --mode test
 This will evaluate the trained model on your test dataset and provide performance metrics.
 
 ## Result
-The following shows the test results of the Weibo dataset:
+The following shows the test results of the Amazon dataset:
 
 ![](./fig/result.png)
 
