@@ -1,11 +1,3 @@
-# main.py
-"""
-SCRAD 训练 & 测试主流程
-- SeqDataset: 加载预处理数据
-- train: 训练循环
-- evaluate: 验证 & 测试
-"""
-
 import os, pickle
 import numpy as np
 import torch
@@ -26,7 +18,7 @@ class SeqDataset(Dataset):
         self.seq_embs = g['seq_embs']
         self.retrieve = g['retrieve_map']
         self.labels = g['seq_labels']
-        # 收集该 split 下所有序列索引
+        
         self.indices = [j for n in nodes for j in self.seq_idx[n]]
 
     def __len__(self): return len(self.indices)
@@ -64,7 +56,7 @@ def train(args):
         tot = 0
         for seqs, tops, labs in tqdm(train_loader, desc=f"Epoch {ep+1}"):
             opt.zero_grad()
-            out = model(seqs, tops)  # 内部含 memory-tree + LLM 召回
+            out = model(seqs, tops) 
             loss = crit(out.squeeze(), labs.to(device))
             loss.backward(); opt.step()
             tot += loss.item()
@@ -103,7 +95,7 @@ def test(args):
             out = model(seqs, tops).sigmoid().cpu().numpy()
             preds.extend(out.flatten())
             labs.extend(lab.numpy())
-    # 序列->节点级评分 & AUC
+   
     node_scores = seq_to_node_scores(np.array(preds), args.seq_num)
     from sklearn.metrics import roc_auc_score
     print("Node AUC:", roc_auc_score(pickle.load(open(f'{base}/graph.pkl','rb'))['labels'].numpy(), node_scores))
