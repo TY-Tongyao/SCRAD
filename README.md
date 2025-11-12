@@ -1,6 +1,6 @@
 #SCRAD
 
-This repository contains the code implementation ofSCRAD for graph anomlay detection. 
+This repository contains the code implementation of SCRAD for graph anomlay detection. 
 
 ## Dataset Sources
 * The sources and usage of the [Reddit](https://snap.stanford.edu/data/soc-redditHyperlinks.html) dataset can be found on [snap.stanford.edu](https://snap.stanford.edu/data/soc-redditHyperlinks.html), as introduced in [Kumar *et al*., 2019](https://arxiv.org/abs/1902.07243). It contains a user interaction graph with edges denoting hyperlink relationships. The data can be downloaded from: [https://snap.stanford.edu/data/soc-redditHyperlinks-title.tsv.gz](https://snap.stanford.edu/data/soc-redditHyperlinks-title.tsv.gz)
