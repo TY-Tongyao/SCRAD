@@ -1,3 +1,4 @@
+#Aligning LLMs with Graph Anomaly Detection via Retrieval-Augmented Sequence Coherence Discrimination#
 #SCRAD
 
 This repository contains the code implementation of SCRAD for graph anomlay detection. 
