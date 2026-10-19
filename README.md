@@ -38,7 +38,7 @@ The `scrad-predictions.tar.gz` archive is approximately 8.1 MB and contains node
 
 ## Installation
 
-Python 3.11; training and LLM inference require a CUDA GPU. The reference environment uses an A100 80GB GPU.
+Python 3.11; training and LLM inference require a CUDA GPU.
 
 ```bash
 python -m pip install -r requirements.txt
