@@ -18,11 +18,6 @@ Inference also requires the `weights/`, `artifacts/`, and `models/` directories.
 
 The `scrad-datasets.tar.gz` dataset package is approximately 1.30 GB and contains the Reddit and Questions datasets before and after anomaly injection. If the files are repackaged as ZIP on Baidu Netdisk, the archive may be named `data.zip`.
 
-| Dataset | Directory Before Injection | Directory After Injection | Anomalous Nodes After Injection | Train/Validation/Test Nodes |
-|---|---|---|---:|---|
-| Reddit | `data/original/reddit/` | `data/reddit/` | 11,182 (approximately 4.8%) | 93,186 / 46,593 / 93,186 |
-| Questions | `data/original/questions/` | `data/questions/` | 3,571 (approximately 7.3%) | 19,568 / 9,784 / 19,569 |
-
 Each directory contains `<dataset>.npz` (node features, labels, and splits), `<dataset>_adj.npz` (sparse adjacency matrix), and `dataset.json` (statistics), where `dataset` is either `reddit` or `questions`.
 
 ## Complete Test Prediction Package
