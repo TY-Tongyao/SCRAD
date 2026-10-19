@@ -1,15 +1,5 @@
 # SCRAD: Aligning LLMs with Graph Anomaly Detection via Retrieval-Augmented Sequence Coherence Discrimination
 
-
-| Dataset | Nodes | Original Undirected Edges | Features | Anomaly Ratio After Injection | Train/Validation/Test | Macro-F1 |
-|---|---:|---:|---:|---:|---|---:|
-| Reddit (Reddit2) | 232,965 | 11,606,919 | 602 | 4.8% | 40%/20%/40% | 96.7702% |
-| Question | 48,921 | 153,540 | 301 | 7.3% | 40%/20%/40% | 93.8160% |
-
-The values are full-test-set results from completed single-seed experiments.
-
-![Macro-F1 command-line results](docs/results.png)
-
 ## Download
 
 [Baidu Netdisk files](https://pan.baidu.com/s/11LeQ_Q6Wwk5A7C9Ylrv4ew?pwd=y6mm) — Extraction code: `y6mm`
