@@ -9,7 +9,7 @@
 | `data.zip` | The two datasets before and after anomaly injection, including fixed splits |
 | `scrad-weight.tar.gz` | Trained checkpoints |
 | `scrad-contexts.tar.gz` | Retrieval bank, KG inputs, sequences, encodings, and test labels |
-| `scrad-deepseek14b-awq.tar.gz` | DeepSeek model and tokenizer |
+| `scrad-deepseek-r1-distill-qwen-14b.tar.gz` | DeepSeek model and tokenizer |
 | `scrad-predictions.tar.gz` | Approximately 8.1 MB; contains node-level predictions for the complete test sets of both datasets and Macro-F1 results |
 
 Inference also requires the `weights/`, `artifacts/`, and `models/` directories. Extract the corresponding resource archives into the project root directory.
