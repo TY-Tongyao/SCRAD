@@ -1,0 +1,48 @@
+{
+  "protocol": "paper",
+  "model": "models/DeepSeek-R1-Distill-Qwen-14B",
+  "seeds": [42, 43, 44, 45, 46],
+  "pretrain": {
+    "protocol": "paper",
+    "graph_mode": "full",
+    "hidden": 256,
+    "epochs": 0,
+    "pmp_epochs": 50,
+    "label_fraction": 0.0,
+    "lr": 0.01
+  },
+  "prepare": {
+    "protocol": "paper",
+    "graph_mode": "full",
+    "codebook_size": 512,
+    "corpus_size": 100000,
+    "include_validation": true
+  },
+  "alignment": {
+    "protocol": "paper",
+    "epochs": 50,
+    "max_steps": 0,
+    "train_views": 9,
+    "encoder_lr": 0.01,
+    "token_lr": 0.01,
+    "vq_weight": 0.0,
+    "refresh_every": 1,
+    "refit_codebook_size": 0,
+    "candidates": 0
+  },
+  "infer": {
+    "protocol": "paper",
+    "decision_mode": "joint",
+    "candidates": 0,
+    "batch_nodes": 2,
+    "max_batch_tokens": 12000,
+    "gpu_memory_fraction": 0.9
+  },
+  "compatibility_infer": {
+    "protocol": "compatibility",
+    "model": "models/DeepSeek-R1-Distill-Qwen-14B-AWQ",
+    "batch_nodes": 32,
+    "max_batch_tokens": 9000,
+    "gpu_memory_fraction": 0.15
+  }
+}

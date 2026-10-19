@@ -1,0 +1,80 @@
+[
+  {
+    "type": "file",
+    "oid": "52373fe24473b1aa44333d318f578ae6bf04b49b",
+    "size": 1570,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "acb132c8f50ba394d4f63c298904c290319877a2",
+    "size": 20,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "d7c162781b2604330a28a220fbd74a714fa162bc",
+    "size": 1018,
+    "path": "config.json"
+  },
+  {
+    "type": "file",
+    "oid": "d079819ecbae97fb347994d8831a81ca9f6924b4",
+    "size": 164,
+    "path": "generation_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "2ddb2093f8aff7d3b28b3231fc189a59151cc578",
+    "size": 4990080088,
+    "lfs": {
+      "oid": "a7920b5250103287efca7e32394736c3a9d72689e2ff196d6d6659115f730630",
+      "size": 4990080088,
+      "pointerSize": 135
+    },
+    "xetHash": "9294a439b52b2916f3be5c1a1e9be62dc947a610601594ee71f43094252ab4f3",
+    "path": "model-00001-of-00002.safetensors"
+  },
+  {
+    "type": "file",
+    "oid": "120903e525c4be3393981e114b5a36a29aa3df27",
+    "size": 4990090664,
+    "lfs": {
+      "oid": "2e2ed5556c89c46d4d77738657e1989d232fddad715eee02c186aa09a3849d89",
+      "size": 4990090664,
+      "pointerSize": 135
+    },
+    "xetHash": "7bd6b0709380a6260ffc06992454e1993138a62b4dadeaf0922f32d08ee334c7",
+    "path": "model-00002-of-00002.safetensors"
+  },
+  {
+    "type": "file",
+    "oid": "13d674ca5bba8978c07e103662ddc9ab73e17ba1",
+    "size": 102386,
+    "path": "model.safetensors.index.json"
+  },
+  {
+    "type": "file",
+    "oid": "1d385d62cf08bca35254547902b792c243656ec1",
+    "size": 485,
+    "path": "special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "1a2db243e47cbc113f6b2ddcc388aeeb8fe1a94c",
+    "size": 11422778,
+    "lfs": {
+      "oid": "e20ddafc659ba90242154b55275402edeca0715e5dbb30f56815a4ce081f4893",
+      "size": 11422778,
+      "pointerSize": 133
+    },
+    "xetHash": "78af695675c4fc8453e45a039d33450bec835340edcdac08f9a1af71f046ab0d",
+    "path": "tokenizer.json"
+  },
+  {
+    "type": "file",
+    "oid": "b068ffca3220a746ba50cc69f850e544217e3a86",
+    "size": 6754,
+    "path": "tokenizer_config.json"
+  }
+]
