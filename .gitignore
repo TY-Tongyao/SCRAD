@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+data/
+weights/
+artifacts/
+models/
+outputs/
+runs/
+reference/
+training_history/
+*.tar.gz

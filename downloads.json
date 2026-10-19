@@ -1,0 +1,9 @@
+{
+  "weights": {
+    "url": "https://pan.baidu.com/s/11LeQ_Q6Wwk5A7C9Ylrv4ew?pwd=y6mm",
+    "extraction_code": "y6mm"
+  },
+  "datasets": "not included; prepare separately in data/reddit and data/questions",
+  "saved_predictions": "not included; prepare separately in reference",
+  "model_upstream": "https://huggingface.co/casperhansen/deepseek-r1-distill-qwen-14b-awq/tree/bc43ec1bbf08de53452630806d5989208b4186db"
+}
