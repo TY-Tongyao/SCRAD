@@ -14,8 +14,6 @@
 
 Inference also requires the `weights/`, `artifacts/`, and `models/` directories. Extract the corresponding resource archives into the project root directory.
 
-[Original source of the DeepSeek AWQ weights](https://huggingface.co/casperhansen/deepseek-r1-distill-qwen-14b-awq/tree/bc43ec1bbf08de53452630806d5989208b4186db)
-
 ## Dataset Package
 
 The `scrad-datasets.tar.gz` dataset package is approximately 1.30 GB and contains the Reddit and Questions datasets before and after anomaly injection. If the files are repackaged as ZIP on Baidu Netdisk, the archive may be named `data.zip`.
@@ -44,7 +42,7 @@ Python 3.11; training and LLM inference require a CUDA GPU.
 python -m pip install -r requirements.txt
 tar -xzf scrad-weights.tar.gz
 tar -xzf scrad-contexts.tar.gz
-tar -xzf scrad-deepseek14b-awq.tar.gz
+tar -xzf scrad-deepseek-r1-distill-qwen-14b.tar.gz
 ```
 
 ## Inference
@@ -77,7 +75,5 @@ tar -xzf scrad-contexts.tar.gz artifacts/reddit/evaluation.npz artifacts/questio
 python scripts/evaluate_saved_f1.py --dataset reddit
 python scripts/evaluate_saved_f1.py --dataset questions
 ```
-
-The outputs are `Macro-F1: 96.7702%` and `Macro-F1: 93.8160%`, respectively.
 
 You can use `--predictions` and `--labels` to specify prediction and label files at other locations.
